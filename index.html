@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#383736">
+
+    <title>Jimmys Rafael</title>
+    <link href="./img/logo-jimmys.png" rel="icon">
+
+    <link rel="manifest" href="./manifest.webmanifest">
+    <link rel="apple-touch-icon" href="./img/logo-jimmys.png">
+    <link rel="canonical" href="">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Style part 02  -->
+ 
+   <link rel="stylesheet" href="./css/aos.css">
+   <link rel="stylesheet" href="./css/coracao.css">
+   <!-- Style part 02  -->
+
+    <script src="./ajax/jquery-3.6.1.js"></script>
+
+    <style>
+    .card img {
+margin-top: 99px;
+}
+    span {
+display: flex;
+margin-left: 55px;
+margin-top: 120px;
+margin-bottom: 30px;
+}
+    div a {
+border-radius: 50px;
+border: 2px solid #fff;
+color: #fff;
+background: none;
+outline: none;
+margin: 0 2px;
+cursor: pointer;
+height: 40px;
+width: 175px;
+font-size: 15px;
+padding: 10px;
+    }
+    div .voltar {
+display: flex;
+width: 70px;
+margin-left: 58%;
+margin-top: 9px;
+    }
+#jimmove {
+       left : 25px;
+      }
+#jimchange:hover {
+       cursor:pointer;
+      }
+      @media(min-width:980px){
+         #part-02{
+         display: none;
+      }
+      }
+    </style>
+
+</head>
+<body>
+    <div class="container" id="part-01">
+        <div class="card">
+            <img src="./img/jr-nervoso.PNG" alt="Jimmys Rafael">
+            <span style="font-size: 15px;" class="post">Você aceita sair comigo?</span>
+            <button style="position: absolute; width:140px" id="jimchange"> Sim </button>
+            <button style="position: absolute; width:140px" id="jimmove"> Não </button>
+        </div>
+    </div>
+
+<!-- JS part 02 -->
+<script src="./ajax/aos.js"></script>
+<script src="./ajax/corcao.js"></script>
+<script>
+
+    AOS.init({
+       duration:800,
+    });
+ 
+ </script>
+ <script>
+
+$("#jimchange").click(function() {
+    window.location.href="https://www.youtube.com/watch?v=Yo2GdogCAZc";
+});
+
+    $("#jimmove").hover(function() {
+      change();
+    });
+    
+    function change() {
+      var i = Math.floor(Math.random()*200)+1;
+      var j = Math.floor(Math.random()*100)+1;
+      $("#jimmove").css({top: j+'px',left:  i+'px'});
+    }
+  </script>
+</body>
+
+</html>

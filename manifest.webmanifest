@@ -1,0 +1,18 @@
+{
+    "short_name": "Jimmys",
+    "name": "Jimmys",
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#383736",
+    "theme-color": "#383736",
+    "background_color": "#383736",
+    "background-color": "#383736",
+    "description": "App do Jimmys",
+    "icons": [
+      {
+        "src": "img/logo-jimmys",
+        "type": "image/png",
+        "sizes": "500x500"
+      }
+    ]
+  }
